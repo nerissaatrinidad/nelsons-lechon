@@ -393,7 +393,6 @@
   <ul class="nav-links">
     <li><a href="#menu">Menu</a></li>
     <li><a href="#order">Order</a></li>
-    <li><a href="#reservations">Reserve</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -487,26 +486,15 @@
     </div>
 
     <div class="menu-card">
-      <div class="menu-card-img">🍚</div>
+      <div class="menu-card-img">🍲</div>
       <div class="menu-card-body">
         <span class="menu-tag">Add-on</span>
-        <div class="menu-card-name">Sinangag Rice</div>
-        <div class="menu-card-desc">Garlic fried rice, the proper pairing for any lechon plate. Available per serving.</div>
-        <div class="menu-card-price">₱ 45 / serving</div>
+        <div class="menu-card-name">Spiced Vinegar</div>
+        <div class="menu-card-desc">Nelson's wife's signature spiced vinegar — bright, flavorful, and boldly refreshing. Crafted fresh daily with onions and red peppers. .</div>
+        <div class="menu-card-price">₱ 50 / 500ml bottle</div>
       </div>
     </div>
 
-    <div class="menu-card">
-      <div class="menu-card-img">🥡</div>
-      <div class="menu-card-body">
-        <span class="menu-tag">Catering</span>
-        <div class="menu-card-name">Fiesta Package</div>
-        <div class="menu-card-desc">1 whole lechon ulo + 2 kg lechon belly + 1 liter house sauce + 20 rice servings. Perfect for 20–30 guests.</div>
-        <div class="menu-card-price">₱ 5,500</div>
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- ORDER -->
@@ -537,7 +525,7 @@
         <option>Lechon Belly (per kg) — ₱1,200/kg</option>
         <option>Lechon Kawali — ₱480</option>
         <option>House Liver Sauce — ₱80/cup</option>
-        <option>Fiesta Package — ₱5,500</option>
+        <option>Original Spiced Vinegar — ₱50/500ml Bottle </option>
       </select>
     </div>
 
@@ -567,62 +555,6 @@
 
     <button class="form-submit" onclick="submitOrder()">Submit Order →</button>
     <p class="form-note">Large orders need at least 3 days advance notice.</p>
-  </div>
-</section>
-
-<!-- RESERVATIONS -->
-<section class="reservations" id="reservations">
-  <div class="reservations-inner">
-    <div class="section-label">Pick-up or Delivery</div>
-    <h2 class="section-title">Make a Reservation</h2>
-    <p class="section-intro">Reserve your spot and we'll make sure the roast is ready.</p>
-
-    <div class="res-form">
-      <div id="res-success" class="success-msg">✅ Reservation request sent! We'll confirm within 24 hours.</div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="r-name">Name</label>
-          <input type="text" id="r-name" placeholder="Your full name" />
-        </div>
-        <div class="form-group">
-          <label for="r-phone">Phone</label>
-          <input type="tel" id="r-phone" placeholder="09XX-XXX-XXXX" />
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="r-date">Date</label>
-          <input type="date" id="r-date" />
-        </div>
-        <div class="form-group">
-          <label for="r-time">Time</label>
-          <input type="time" id="r-time" />
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="r-guests">Number of Guests</label>
-          <input type="number" id="r-guests" min="1" placeholder="e.g. 10" />
-        </div>
-        <div class="form-group">
-          <label for="r-type">Type</label>
-          <select id="r-type">
-            <option>Delivery</option>
-            <option>Pickup</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="r-notes">Additional Notes</label>
-        <textarea id="r-notes" placeholder="Occasion, dietary needs, seating preferences…"></textarea>
-      </div>
-
-      <button class="btn-primary" style="width:100%;padding:16px;font-size:1rem;border-radius:4px;" onclick="submitReservation()">Request Reservation →</button>
-    </div>
   </div>
 </section>
 
